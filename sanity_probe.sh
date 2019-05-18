@@ -3,7 +3,7 @@
 # Set system metrics constraints: Max Load Average, Min free RAM (MB)
 MAX_LA=5.0
 MIN_FR=250
-alert_recip='akuchinsky@gmail.com'
+alert_recip='yourname@domain.com'
 
 alertmsg=''
 la=$(uptime  |sed -e 's/.*average:\(.*\)/\1/'|awk -F, '{ print $1 }')
